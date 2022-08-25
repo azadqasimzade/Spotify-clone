@@ -19,7 +19,7 @@ const Menu = () => {
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/collection" activeClassName="bg-active text-white" className="h-10 flex items-center gap-x-4 text-sm rounded font-semibold text-link hover:text-white transition-colors px-4">
+                <NavLink to="/collection/playlists" activeClassName="bg-active text-white" className="h-10 flex items-center gap-x-4 text-sm rounded font-semibold text-link hover:text-white transition-colors px-4">
                     <span><Icon name='collection' size={24}/></span>
                     Your Library
                 </NavLink>

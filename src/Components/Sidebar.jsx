@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux'
+import { NavLink } from 'react-router-dom'
 import imgLogo from '../assets/logo.svg'
 import { Icon } from './icons'
 import DownloadApp from './Sidebar/DownloadApp'
@@ -11,9 +12,9 @@ const Sidebar = () =>{
 
   return (
     <aside className="w-60 pt-6 flex flex-col flex-shrink-0 bg-black">
-      <a href="/" className='mb-7 px-6'>
+      <NavLink to="/" className='mb-7 px-6'>
         <img src={imgLogo} alt="spotify" className='h-10'/>
-      </a>
+      </NavLink>
       <Menu/>
 
       <nav className='mt-6'>
@@ -34,7 +35,6 @@ const Sidebar = () =>{
       </nav>
       <PlayLists/>
       <DownloadApp/>
-
       {sidebar && <SidebarCover/>}
     </aside>
   )

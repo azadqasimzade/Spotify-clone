@@ -6,6 +6,7 @@ const Auth = () => {
         name: 'Azad Qasimzade',
         avatar: <Icon name='userIcon' size={16}/>
     }
+    
   return (
     <Menu as='nav' className='relative'>
       {({open}) => (

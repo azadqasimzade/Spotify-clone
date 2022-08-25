@@ -263,6 +263,41 @@ const ArrowTopIcon = ({size}) =>{
     )
 }
 
+const CloseIcon = ({size}) =>{
+    return(
+        <svg role="img" height={size} width={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+         <path d="M3.293 3.293a1 1 0 011.414 0L12 10.586l7.293-7.293a1 1 0 111.414 1.414L13.414 12l7.293 7.293a1 1 0 01-1.414 1.414L12 13.414l-7.293 7.293a1 1 0 01-1.414-1.414L10.586 12 3.293 4.707a1 1 0 010-1.414z"
+          fill="currentColor"/>
+       </svg>
+    )
+}
+
+const MusicIcon = ({size}) =>{
+    return(
+        <svg role="img" height={size} width={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+         <path d="M7 3h14v15.167a3.5 3.5 0 11-3.5-3.5H19V5H9v13.167a3.5 3.5 0 11-3.5-3.5H7V3zm0 13.667H5.5a1.5 1.5 0 101.5 1.5v-1.5zm12 0h-1.5a1.5 1.5 0 101.5 1.5v-1.5z"
+          fill="currentColor"/>
+       </svg>
+    )
+}
+
+const ArtistIcon = ({size}) =>{
+    return(
+        <svg role="img" height={size} width={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+         <path d="M13.363 10.474l-.521.625a2.499 2.499 0 00.67 3.766l.285.164a5.998 5.998 0 011.288-1.565l-.573-.33a.5.5 0 01-.134-.754l.52-.624a7.372 7.372 0 001.837-4.355 7.221 7.221 0 00-.29-2.489 5.644 5.644 0 00-3.116-3.424A5.771 5.771 0 006.753 2.87a5.7 5.7 0 00-1.19 2.047 7.22 7.22 0 00-.29 2.49 7.373 7.373 0 001.838 4.355l.518.622a.5.5 0 01-.134.753L3.5 15.444a5 5 0 00-2.5 4.33v2.231h13.54a5.981 5.981 0 01-1.19-2H3v-.23a3 3 0 011.5-2.6l3.995-2.308a2.5 2.5 0 00.67-3.766l-.521-.625a5.146 5.146 0 01-1.188-4.918 3.71 3.71 0 01.769-1.334 3.769 3.769 0 015.556 0c.346.386.608.84.768 1.334.157.562.22 1.146.187 1.728a5.379 5.379 0 01-1.373 3.188zm7.641-1.173a1 1 0 00-1 1v4.666h-1a3 3 0 103 3v-7.666a.999.999 0 00-1.003-1h.003zm-1 8.666a1 1 0 11-1-1h1v1z"
+          fill="currentColor"/>
+       </svg>
+    )
+}
+
+const AlbumIcon = ({size}) =>{
+    return(
+        <svg role="img" height={size} width={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+         <path d="M26 0.00100708C11.641 0.00100708 0 11.642 0 26.001C0 40.36 11.641 52.001 26 52.001C40.36 52 52 40.36 52 26C52 11.64 40.36 0.00100708 26 0.00100708ZM26 50C12.767 50 2 39.234 2 26C2 12.766 12.767 2.00001 26 2.00001C39.234 2.00001 50 12.766 50 26C50 39.234 39.234 50 26 50ZM26 18C21.582 18 18 21.582 18 26C18 30.418 21.582 34 26 34C30.418 34 34 30.418 34 26C34 21.582 30.419 18 26 18ZM26 32C22.692 32 20 29.309 20 26C20 22.691 22.692 20 26 20C29.308 20 32 22.691 32 26C32 29.309 29.309 32 26 32Z" fillRule="evenodd"
+          fill="currentColor"/>
+       </svg>
+    )
+}
 
 const Icon = ({name, size=24}) =>{
     const icons = {
@@ -293,7 +328,11 @@ const Icon = ({name, size=24}) =>{
         volumeNormal: VolumeNormalIcon,
         volumeFull: VolumeFulllIcon,
         lyricsIcon: LyricsIcon,
-        arrowTop: ArrowTopIcon
+        arrowTop: ArrowTopIcon,
+        closeIcon: CloseIcon,
+        musicIcon: MusicIcon,
+        artistIcon: ArtistIcon,
+        albumIcon: AlbumIcon
     }
 
     const Component = icons[name]
