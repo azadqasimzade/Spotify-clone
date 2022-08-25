@@ -3,7 +3,9 @@ import {Switch, Route} from 'react-router-dom'
 import Home from "./pages/Home"
 import Search from "./pages/Search"
 import Collection from "./pages/Collection"
+
 const Contetnt = () => {
+
   return (
     <main className="flex-auto overflow-auto">
       <Navbar/>
