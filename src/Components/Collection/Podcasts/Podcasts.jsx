@@ -6,8 +6,8 @@ const Podcasts = () => {
   return (
     <div>
         <h1 className="text-2xl font-semibold mb-5">Podcasts</h1>
-        <div className="grid grid-cols-6 gap-6">
-          <div className="w-[24.646rem] max-w-full h-[16.449rem] max-h-full col-span-2 rounded-lg bg-gradient-to-br from-[#00644e] to-[#27856a]">
+        <div className="grid 2xl:grid-cols-6 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+          <div className="w-[24.646rem] max-w-full h-[16.449rem] max-h-full sm:col-span-2 rounded-lg bg-gradient-to-br from-[#00644e] to-[#27856a]">
             <div className="flex flex-col p-5 h-full group relative">
               <div className="mb-2 flex items-end h-full">
                 <span className="text-[2rem] font-bold tracking-tighter">Your Episodes</span>

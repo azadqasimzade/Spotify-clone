@@ -9,7 +9,7 @@ const Contetnt = () => {
   return (
     <main className="flex-auto overflow-auto">
       <Navbar/>
-      <div className="px-8 py-5">
+      <div className="sm:px-8 px-2 py-5">
         <Switch>
           <Route path="/" exact>
             <Home/>

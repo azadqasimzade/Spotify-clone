@@ -6,7 +6,7 @@ const Search = () => {
   return (
       <div className="mt-10">
         <Title title={'Browse all'}/>
-        <div className="grid grid-cols-6 gap-6 mt-5">
+        <div className="grid 2xl:grid-cols-6 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-5">
           {categories.map(category => <Category category={category} key={category.id}/>)}
         </div>
       </div>

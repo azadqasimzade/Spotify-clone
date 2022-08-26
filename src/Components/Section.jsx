@@ -12,7 +12,7 @@ const Section = ({title, more = false, items}) => {
                     <NavLink to={more} className='text-xs font-semibold uppercase text-link hover:underline tracking-wider'>See All</NavLink>
                 )}
             </header>
-            <div className='grid grid-cols-6 gap-x-6'>
+            <div className='grid 2xl:grid-cols-6 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6'>
                 {
                     items.map(item => <SongItem key={item.id} item={item}/>)
                 }
