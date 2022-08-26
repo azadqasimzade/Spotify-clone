@@ -10,7 +10,7 @@ const Navbar = () => {
   const collectionRoute = useRouteMatch('/collection')
 
   return (
-    <div className={`h-[3.75rem] flex items-center justify-between px-8 sticky top-0 z-10`}>
+    <div className={`h-[3.75rem] flex items-center justify-between px-8 sticky top-0 z-10 backdrop-invert bg-backdrop/70 backdrop-opacity-10`}>
       <Navigation/>
       {searchRoute && <Search/>}
       {collectionRoute && <Links/>}
